@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1190px)" href="stylesheets/response.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d14fcf947d.js" crossorigin="anonymous"></script>
+    <title>Key Food Fresh</title>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <img src="logo.png" alt="logo" srcset="">
+            </div>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-close" onclick="hidemenu()"></i>
+                <ul>
+                    <a href="#"><li>HOME</li></a>
+                    <a href="#work"><li>ABOUT</li></a>
+                    <a href="#prod"><li>PRODUCTS</li></a>
+                    <a href="#comp"><li>SERVICES</li></a>
+                </ul>
+                <button type="button" class="btn" id="hut">SIGN UP</button>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </div>
+        <div class="banner-title">
+            <h1> WE <span> SERVE THE BEST<br>FOR THE</span> BEST IN YOU</h1>
+            <button type="button" class="btn">EXPLORE</button>
+        </div>
+        <div class="vertical-bar">
+            <div class="search-icon">
+                <i class="fa fa-th-list"></i>
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="social-icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-github"></i>
+                <i class="fa fa-whatsapp"></i>
+
+            </div>
+        </div>
+    </div>
+
+    <section id="work">
+        <div class="head">
+            <h2>HOW IT WORKS?</h2>
+        </div>
+        <div class="container">
+            <div class="card">
+                <i class="fas fa-mobile fa-4x" id="icon"></i>
+                <div class="info">
+                    <h3>Grab Your Mobile</h3>
+                    <p>To order Your meal all you need to do is just grab your phone and visit our website and add to
+                        cart whatever meal you want. Its as easy as pie!</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-door-open fa-4x" id="icon"></i>
+                <div class="info">
+                    <h3>Open Your Door</h3>
+                    <p>We ensure just 30 minutes delivery after the order. We have provided the most trusted delivery in
+                        the town, so just be ready at your doors.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-utensils fa-4x" id="icon"></i>
+                <div class="info">
+                    <h3>Enjoy The Meal</h3>
+                    <p>Our outlet always serves the best quality food. We never compromise on the quality of our
+                        products and always serves fresh to the customers. Enjoy!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="butt-area" style="display: block; margin: auto; margin-top: 1px;">
+            <button class="btn2">ORDER NOW</button>
+        </div>
+    </section>
+    <hr>
+
+    <section id="prod">
+        <div class="head">
+            <h3>ENDLESS COMBINATION OF CLEAN EATS TO CHOOSE FROM!</h3>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <img src="food/donut.jpg" alt="donut" srcset="" height="200px" width="200px">
+                <div class="info">
+                    <h4>Cream Donut</h4>
+                </div>
+            </div>
+            <div class="card">
+                <img src="food/fries.jpg" alt="donut" srcset="" height="200px" width="200px">
+                <div class="info">
+                    <h4>French Fries</h4>
+                </div>
+            </div>
+            <div class="card">
+                <img src="food/lemon-fish.jpg" alt="donut" srcset="" height="200px" width="200px">
+                <div class="info">
+                    <h4>Lemon Fish</h4>
+                </div>
+            </div>
+            <div class="card">
+                <img src="food/pizza.jpg" alt="donut" srcset="" height="200px" width="200px">
+                <div class="info">
+                    <h4>Italian Pizza</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="hide">
+            <div class="card">
+                <img src="food/burger.jpg" alt="donut" srcset="" height="200px" width="200px">
+                <div class="info">
+                    <h4>Dakota Burger</h4>
+                </div>
+            </div>
+            <div class="card">
+                <img src="food/sandwich.jpg" alt="donut" srcset="" height="200px" width="200px">
+                <div class="info">
+                    <h4>Sevilla Sandwich</h4>
+                </div>
+            </div>
+            <div class="card">
+                <img src="food/salad.jpg" alt="donut" srcset="" height="200px" width="200px">
+                <div class="info">
+                    <h4>Veg Salad</h4>
+                </div>
+            </div>
+            <div class="card">
+                <img src="food/fruit-salad.jpg" alt="donut" srcset="" height="200px" width="200px">
+                <div class="info">
+                    <h4>Fruit Salad</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="butt-area" style="display: block; margin: auto; margin-top: 50px; margin-bottom: 1px;">
+            <button class="btn2" id="btn-prod">BROWSE MORE</button>
+        </div>
+    </section>
+    <hr>
+
+    <section id="comp">
+        <div class="head">
+            <h2>Some Tech Giants We Serve!!</h2>
+        </div>
+        <div class="container">
+            <div class="card">
+                <img src="company/microsoft.jpg" alt="Microsoft" height="200px" width="280px">
+                <div class="info">
+                    <p>We recently signed a food contract with the biggest Tech company in the world! Microsoft!!</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="company/mahindra.png" alt="Microsoft" height="200px" width="280px">
+                <div class="info">
+                    <p>Tech Mahindra is one of our oldest customers. Last Year we served them food of worth Rs.1M!</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="company/wipro.jpg" alt="Microsoft" height="200px" width="280px">
+                <div class="info">
+                    <p>Wipro trusts us the most! We serve them meals for all square of time. They rated us 5 star is
+                        hygiene!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="foo">
+        <div class="container">
+            <ul>
+                <li><i class="fas fa-map-marker-alt fa-1x" style="color: white; margin: 20px 8px;"></i><span id="txt">SCO-24 Ina Market, Aviation Colony</span></li>
+                <li><i class="fas fa-phone-alt fa-1x" style="color: white; margin: 20px 8px;"></i><span id="txt">121-7352-562</span></li>
+                <li><i class="fas fa-globe fa-1x" style="color: white; margin: 20px 8px;"></i><span id="txt">www.mykeyfoodfresh.in</span></li>
+                <li><i class="fas fa-envelope-square fa-1x" style="color: white; margin: 20px 8px;"></i><span id="txt">Support123@myfood.com</span></li>
+            </ul>
+
+        </div>
+
+        <div class="container">
+            <div class="head">
+                <h5>About The Company</h5>
+            </div>
+
+            <div class="content">
+                <p>Key food fresh is a food distributing outlet with over 20 branches present in Delhi, Gurugram, Greater Noida and Bangalore. Visit www.keyfoodfresh.in for more deatils.</p>
+                <i class="fab fa-facebook-f fa-1x" style="color: white; margin:2px 10px;"></i>
+                <i class="fab fa-github fa-1x" style="color: white; margin: 20px 8px;"></i>
+                <i class="fab fa-whatsapp fa-1x" style="color: white; margin: 20px 8px;"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var show = document.getElementById("nav-links");
+
+        function showmenu(){
+            show.style.right = "0";
+        }
+
+        function hidemenu(){
+            show.style.right = "-290px";
+        }
+    </script>
+</body>
+
+</html>

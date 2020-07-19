@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.hero{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url(../background.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.nav-bar{
+    display: flex;
+    padding: 40px 120px;
+}
+
+.nav-logo img{
+    width: 165px;
+    height: 100px;
+}
+
+.nav-links{
+    display: flex;
+    padding: 40px 40px;
+}
+
+.nav-logo{
+    display: inline-block;
+}
+
+.nav-links{
+    flex: 1;
+}
+
+.nav-links ul{
+    margin-left: 50px;
+    display: inline;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 35px;
+}
+
+.nav-links ul a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+}
+
+.nav-links ul li::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background: yellow;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.btn{
+    padding: 10px 20px;
+    border: 0;
+    background: yellow;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* .nav-links .btn{ */
+    /* float: right; */
+/* } */
+
+.nav-links .btn:hover{
+    background: orangered;
+    color: #fff;
+}
+
+
+.banner-title{
+    margin: 80px 130px;
+    color: #fff;
+}
+
+.banner-title .btn:hover{
+    background: orangered;
+    color: #fff;
+}
+
+.banner-title h1{
+    font-size: 64px;
+    margin-bottom: 30px;
+}
+
+span{
+    color: yellow;
+}
+
+.vertical-bar{
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: #000;
+}
+.search-icon{
+    height: 60%;
+    width: 80px;
+}
+
+.search-icon .fa{
+    margin: 45px 23px;
+    display: block;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.social-icons{
+    height: 35%;
+    width: 80px;
+    background: yellow;
+    text-align: center;
+    padding-top: 27%;
+    bottom: 0;
+    position: absolute;
+}
+
+.social-icons .fa{
+    margin: 15px 23px;
+    display: block;
+    padding: 8px;
+    border: 1px solid #000;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.social-icons .fa:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.nav-bar .fa{
+    display: none;
+}
+
+/* styling for other sec */
+
+.container{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+
+.btn2{
+    height: 50px;
+    width: 200px;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    color: white;
+    background-color: black;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+
+.btn2:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    font-size: 1.3rem;
+}
+
+#work{
+    margin-top: 20px;
+    font-size: 2rem;
+    /* border: 1px solid black; */
+    height: 650px;
+    width: 97%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+#work .head{
+    /* border: 1px solid black; */
+    height: 80px;
+    width: 100%;
+}
+
+#work .head h2{
+    text-align: center;
+}
+
+#work .container{
+    height: 390px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#work .container .card{
+    height: 310px;
+    width: 300px;
+    /* border: 2px solid black; */
+    background-color: white;
+    margin: 30px;
+}
+
+#work .container .card h3{
+    font-size: 1.3rem;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+#work .container .card p{
+    font-size: 1.1rem;
+    margin: 10px;
+}
+
+#prod{
+    margin-top: 10px;
+    font-size: 2rem;
+    /* border: 1px solid black; */
+    height: 850px;
+    width: 97%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    padding: 15px;
+}
+
+#prod .head h3{
+    text-align: center;
+}
+
+#prod .container{
+    height: 300px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#prod .head{
+    /* border: 1px solid black; */
+    height: 80px;
+    width: 100%;
+}
+
+#prod .container .card{
+    height: 250px;
+    width: 250px;
+    /* border: 1px solid black; */
+    background-color: white;
+    margin: 20px;
+}
+
+#prod .container .card h4{
+    font-size: 1.2rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#prod .container .card:hover{
+    box-shadow: 10px 8px 16px 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+#comp{
+    margin-top: 50px;
+    font-size: 2rem;
+    /* border: 1px solid black; */
+    height: 500px;
+    width: 97%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    padding: 15px;
+}
+
+#comp .head h2{
+    text-align: center;
+}
+
+#comp .container{
+    height: 400px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#comp .container .card{
+    /* border: 1px solid black; */
+    height: 300px;
+    width: 300px;
+    margin: 80px;
+    padding: 5px;
+}
+
+#comp .container .card p{
+    font-size: 17px;
+    margin-top: 1px;
+}
+
+#foo{
+    margin-top: 100px;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 350px;
+    /* border: 1px solid white; */
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#foo .container{
+    /* border: 1px solid white; */
+    height: 250px;
+    width: 550px;
+    margin: 10px 100px;
+    padding: 30px;
+}
+
+#foo .container li{
+    text-align: left;
+}
+
+#txt{
+    color: white;
+    font-size: 1.3rem;
+    margin: 15px;
+}
+
+#foo .container .head{
+    height: 30px;
+    width: 100%;
+    /* border: 1px solid white; */
+    text-align: left;
+    padding: 20px;
+}
+
+#foo .container .head h5{
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+#foo .container .content{
+    height: 200px;
+    width: 60%;
+    /* border: 2px solid white; */
+    text-align: left;
+    margin-top: 10px;
+    padding: 15px 15px;
+
+}
+
+#foo .container .content p{
+    color: white;
+    font-size: 16px;
+    text-align: left;
+    font-size: 17px;
+}
